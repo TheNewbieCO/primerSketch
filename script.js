@@ -6,7 +6,7 @@ const bridge = document.querySelector('.bridge img');
 const title = document.querySelector('.info h1');
 
 
-//evento
+//evento: movimiento de mouse
 container.addEventListener("mousemove", (e) => {
     let xaxis = ((window.innerWidth / 2 - e.pageX) / 25);
     let yaxis = ((window.innerHeight / 2 - e.pageY) / 25);
