@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.card {
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 3rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.bridge {
+    min-height: 35vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.bridge img {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.circle {
+    width: 20rem;
+    height: 20rem;
+    background-color: sandybrown;
+    /* background: linear-gradient( to right, rgba(0, 238, 232, 0) rgba(130, 64, 47, 0.75));
+    */
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 3rem;
+    margin-right: 0rem;
+    margin-top: 3rem;
+}
+
+.info h1 {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: gray;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+button.active {
+    background-color: darkgray;
+    color: white;
+}
+
+.comprabtn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.comprabtn button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: coral;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
